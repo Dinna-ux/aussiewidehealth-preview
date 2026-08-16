@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if ($_SERVER["REQUEST_METHOD"] !== "POST") {
   header("Location: contact.html");
   exit;
@@ -20,7 +20,7 @@ if ($name === "" || $phone === "" || !filter_var($email, FILTER_VALIDATE_EMAIL) 
   exit;
 }
 
-$to = "info@aussiewidehealth.com.au";
+$to = "info@aussiewidehealthcare.com.au";
 $subject = "AussieWide Health Website Enquiry";
 $body = "New enquiry from AussieWide Health website\n\n";
 $body .= "Source: {$source}\n";
@@ -31,7 +31,7 @@ $body .= "NDIS Status: {$ndis}\n\n";
 $body .= "Message:\n{$message}\n";
 
 $headers = [];
-$headers[] = "From: AussieWide Health Website <info@aussiewidehealth.com.au>";
+$headers[] = "From: AussieWide Health Website <info@aussiewidehealthcare.com.au>";
 $headers[] = "Reply-To: {$name} <{$email}>";
 $headers[] = "Content-Type: text/plain; charset=UTF-8";
 
