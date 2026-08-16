@@ -50,6 +50,12 @@ h3 { font-size: 1.25rem; }
   min-height: 38px;
 }
 .topbar a { color: #fff; font-weight: 700; }
+.topbar-contact {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 18px;
+}
 
 .site-header {
   position: sticky;
@@ -549,11 +555,18 @@ textarea { min-height: 140px; resize: vertical; }
     line-height: 1.35;
   }
   .topbar span,
-  .topbar a {
+  .topbar a,
+  .topbar-contact {
     display: block;
     max-width: 100%;
   }
   .topbar span { text-wrap: balance; }
+  .topbar-contact {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
   .topbar a {
     overflow-wrap: anywhere;
     line-height: 1.25;
@@ -593,4 +606,11 @@ textarea { min-height: 140px; resize: vertical; }
     overflow-x: auto;
   }
   .testimonial-set[aria-hidden="true"] { display: none; }
+}
+@media (min-width: 769px) {
+  .topbar-contact {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+  }
 }
