@@ -1,4 +1,4 @@
-# AussieWide Health Website Deployment
+﻿# AussieWide Health Website Deployment
 
 This folder is ready for standard GoDaddy/cPanel hosting.
 
@@ -10,7 +10,11 @@ Upload every file and folder in this project to the domain public web folder, us
 
 The enquiry forms post to `contact.php`, which sends mail to:
 
-`info@aussiewidehealth.com.au`
+`info@aussiewidehealthcare.com.au`
+
+Public contact number:
+
+`+61 459 023 547`
 
 Before launch, send a test enquiry from the live domain and confirm it arrives. If GoDaddy blocks unauthenticated mail, create the mailbox in cPanel and enable SMTP or ask GoDaddy support to confirm PHP `mail()` delivery.
 
